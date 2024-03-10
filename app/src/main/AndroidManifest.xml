@@ -46,7 +46,10 @@
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
-            android:exported="false">
+            android:exported="true">
+
+            <!--Switch exported to false when deploying-->
+
             <intent-filter>
                 <action android:name="android.intent.action.SEND_MULTIPLE" />
                 <category android:name="android.intent.category.DEFAULT" />
